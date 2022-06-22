@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <TheHeader />
-    <div class="section bg-dark text-light">
-      <div class="container">
-        <h4 class="text-start py-4 fw-bolder mb-0">--&gt; Contents goes here &lt;--</h4>
-      </div>
-    </div>
+    <CardsBanner />
     <BannerBlue />
     <BannerCTA />
     <TheFooter />
@@ -17,6 +13,7 @@ import TheHeader from './components/TheHeader.vue';
 import TheFooter from './components/TheFooter.vue';
 import BannerCTA from './components/BannerCTA.vue';
 import BannerBlue from './components/BannerBlue.vue';
+import CardsBanner from './components/CardsBanner.vue';
 
 export default {
   name: 'App',
@@ -24,7 +21,8 @@ export default {
     TheHeader,
     TheFooter,
     BannerCTA,
-    BannerBlue
+    BannerBlue,
+    CardsBanner
 }
 }
 </script>
@@ -42,5 +40,20 @@ export default {
 
 a{
   color: unset;
+}
+
+button.primary{
+  display: inline-block;
+  background-color: #3f7ef8;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: whitesmoke;
+  border: none;
+  padding: 0.5rem 3rem;
+
+  &:hover{
+    background-color: #588fff;
+  }
 }
 </style>
