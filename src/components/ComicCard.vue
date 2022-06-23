@@ -11,7 +11,7 @@
     export default{
         props: {
             imgUrl: String,
-            cardTitle: String
+            cardTitle: String,
         },
         data(){
             return{};
@@ -21,7 +21,7 @@
 
 <style lang="scss" scoped>
     .comic-card{
-        padding-bottom: 1rem;
+        cursor: pointer;
         color: whitesmoke;
         text-transform: uppercase;
         text-align: left;
